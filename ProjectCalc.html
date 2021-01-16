@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+      <link rel="stylesheet" href="CSS/Style.css">  
+    <meta charset="utf-8">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+      
+            
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+      
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+      
+      </head>
+    
+      <body>
+        <div id="body">
+        <form>
+            <h1 id="heading">Project cost estimation</h1>
+           
+                <div class="pro">
+                    <h6>Type</h6>
+                    <select onchange=" projecttype()" id="protype"  name="protype" class="custom-select change">
+                         
+                            <option id="Commerce" value="Commerce">E-commerce</option>      
+                            <option id="Dynamic" value="Dynamic">Dynamic web application</option>
+                            <option id="Static" value="Static">Static web application</option>
+                     
+                    </select>
+                </div>
+                <div class="pro">
+                    <h6>Performance</h6>
+                    <select  onchange=" projecttype()"  id="performance" name="performance"   class="custom-select change">
+                      <option id="Excellent" value="Excellent">High</option>
+                      <option id="Very good" value="Very good">Medium</option>
+                      <option id="Good" value="Good">Low</option>
+                    </select>
+                </div>
+               
+                <div class="pro">
+                    <h6>Duration</h6>
+                    <select  onchange=" projecttype()"  id="duration" name="duration"  class="custom-select change">
+                      <option id="One" value="One">One week</option>
+                      <option id="Two" value="Two">Two weeks</option>
+                      <option id="Three" value="Three">Three weeks</option>
+                    </select>
+                </div>
+                <button onclick="calc()" type="button" id="btn">Calculate budget</button>
+              
+                <h5>Final budget</h5>
+                <div id="budget"></div>
+     
+          </form>
+        </div>
+     
+     <script src="JS/Java.js" ></script>
+      </body>
+
+      </html>
